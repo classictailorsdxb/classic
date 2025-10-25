@@ -1,0 +1,325 @@
+:root {
+    --primary-color: #1A2A4C;  /* Deep Navy Blue */
+    --background-color: #F5F5DC;  /* Cream/Ecru */
+    --text-color: #1A2A4C;
+    --light-bg: #F5F5DC;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+.logo h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.logo a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.logo .classic {
+    font-style: italic;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background-color: var(--background-color);
+    box-shadow: 0 2px 5px rgba(26, 42, 76, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav-links li {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 500;
+    transition: color 0.3s ease;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    line-height: 1.5;
+}
+
+.nav-links a:hover {
+    opacity: 0.8;
+}
+
+/* Base button styles */
+.cta-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: #F5F5DC !important;  /* Explicitly set cream color */
+    padding: 0.8rem 1.8rem;
+    border-radius: 25px;
+    font-weight: 500;
+    text-decoration: none;
+    border: 2px solid var(--primary-color);
+    transition: all 0.3s ease;
+    font-family: 'Playfair Display', serif;
+}
+
+.cta-button:hover {
+    background-color: var(--background-color);
+    color: var(--primary-color) !important;
+    border-color: var(--primary-color);
+}
+
+/* Navigation specific button styles */
+.nav-links .cta-button {
+    color: #F5F5DC !important;
+    margin: 0;
+    padding: 0.5rem 1.5rem;
+    line-height: 1.5;
+    vertical-align: middle;
+}
+
+.hero {
+    position: relative;
+    height: 80vh;
+    background-image: url('../images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--background-color);
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(26, 42, 76, 0.7); /* Using primary color with opacity */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    padding: 2rem;
+}
+
+.hero h2 {
+    font-size: 3.5rem;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
+/* Hero section button styles */
+.hero .cta-button {
+    margin-top: 2rem;
+    font-size: 1.1rem;
+}
+
+.about-section {
+    padding: 5rem 0;
+    background-color: var(--light-bg);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.feature-card {
+    background: var(--background-color);
+    border: 1px solid var(--primary-color);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.feature-card:hover i {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.modern-footer {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    padding: 3rem 0 1rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+/* WhatsApp button styling */
+.social-links .whatsapp-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: transparent;
+    color: var(--background-color);
+    border: 2px solid var(--background-color);
+    text-decoration: none;
+    transition: background 0.2s ease, color 0.2s ease, transform 0.12s ease;
+    font-size: 1.2rem;
+}
+
+/* Show a subtle press/hover and an option to use brand green on hover */
+.social-links .whatsapp-link:hover {
+    background: #25D366; /* WhatsApp brand green on hover */
+    color: var(--background-color);
+    transform: translateY(-2px);
+}
+
+/* Icon sizing */
+.social-links .whatsapp-link .fab {
+    font-size: 1.1rem;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.contact-info a,
+.info-item a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover,
+.info-item a:hover {
+    color: var(--primary-color);
+    opacity: 0.8;
+}
+
+/* WhatsApp widget styles */
+.whatsapp-widget {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.whatsapp-widget a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    border-radius: 50%;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease;
+    text-decoration: none;  /* Added this line to remove the underline */
+}
+
+.whatsapp-widget a:hover {
+    transform: scale(1.1);
+}
+
+.whatsapp-widget i {
+    font-size: 2rem;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .nav-links {
+        margin-top: 1rem;
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+    
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+}

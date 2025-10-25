@@ -1,0 +1,18 @@
+classic-tailors-website
+├── src
+│   ├── css
+│   │   ├── main.css
+│   │   └── form.css
+│   ├── js
+│   │   ├── main.js
+│   │   └── form-validation.js
+│   └── pages
+│       ├── services.html
+│       └── contact.html
+├── index.html
+├── robots.txt
+├── sitemap.xml
+├── .htaccess
+├── manifest.json
+├── package.json
+└── README.md

@@ -1,0 +1,19 @@
+{
+  "name": "classic-tailors-website",
+  "version": "1.0.0",
+  "description": "A static website for Classic Tailors, featuring services, contact form, and SEO optimization.",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server .",
+    "build": "echo 'No build step required for static site'"
+  },
+  "keywords": [
+    "tailors",
+    "custom clothing",
+    "sewing",
+    "alterations",
+    "classic tailors"
+  ],
+  "author": "Classic Tailors",
+  "license": "MIT"
+}
